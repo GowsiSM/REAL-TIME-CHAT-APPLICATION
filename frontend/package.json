@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "cra-template": "1.2.0",
-    "font-awesome": "^4.7.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "css-select": "^4.3.0",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^5.4.0",
     "react-scripts": "5.0.1",
     "react-scroll-to-bottom": "^4.2.0",
     "socket.io-client": "^4.8.1",
+    "svgo": "^2.8.0",
     "web-vitals": "^4.2.4"
   },
   "scripts": {

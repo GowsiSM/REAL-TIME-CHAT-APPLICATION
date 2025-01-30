@@ -59,15 +59,24 @@
      margin-top: 5px;
 }
 
-#you .message-content {
-     background-color: #d1f7c4;
-     align-self: flex-end;
+.you .message-content,
+.other .message-content {
+     background-color: #69d445;
+     align-self: flex-start;
+     text-align: left;
+     padding: 8px 12px;
+     min-width: fit-content;
+     max-width: 100px;
+     /* Adjust max width as needed */
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     border-radius: 20px;
 }
 
-#other .message-content {
-     background-color: #f1f1f1;
-     align-self: flex-start;
+.other .message-content {
+     background-color: #349ac9;
 }
+
 
 .chat-footer {
      display: flex;

@@ -22,9 +22,13 @@ function Chat({ socket, username, room, userCount }) {
      };
 
      useEffect(() => {
-          socket.on("receive_message", (data) => {
+          socket.off("receive_message").on("receive_message", (data) => {
                setMessageList((list) => [...list, data]);
           });
+
+          return () => {
+               socket.off("receive_message");
+          };
      }, [socket]);
 
      return (
@@ -39,6 +43,7 @@ function Chat({ socket, username, room, userCount }) {
                               <div
                                    key={index}
                                    className={`message ${username === messageContent.author ? "you" : "other"}`}
+
                               >
                                    <div>
                                         <div className="message-content">
@@ -46,13 +51,13 @@ function Chat({ socket, username, room, userCount }) {
                                         </div>
                                         <div className="message-meta">
                                              <p className="time">{messageContent.time}</p>
-                                             <p className="author">{messageContent.author}</p>
+                                             <p className="author">{username === messageContent.author ? "You" : messageContent.author}</p>
                                         </div>
                                    </div>
                               </div>
                          ))}
                     </ScrollToBottom>
-               </div>
+               </div >
                <div className="chat-footer">
                     <input
                          type="text"
@@ -63,7 +68,7 @@ function Chat({ socket, username, room, userCount }) {
                     />
                     <button onClick={sendMessage}>Send</button>
                </div>
-          </div>
+          </div >
      );
 }
 
