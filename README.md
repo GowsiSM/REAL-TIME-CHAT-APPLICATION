@@ -1,4 +1,4 @@
-<h2>E-learning Platform UI Design</h2>
+<h2>Real Time Chat Application</h2>
 
 **TOOLS USED**:
 
