@@ -1,23 +1,11 @@
-**COMPANY**: CODTECH IT SOLUTIONS
-
-**INTERN NAME**: Gowsi S M
-
-**INTERN ID**: CT08HUT
-
-**DOMAIN**: FRONTEND WEB DEVELOPMENT
-
-**INTERNSHIP DURATION**: 30-Dec-2024 to 30-Jan-2025
-
-**MENTOR NAME**: Neela Santhosh
-
-TASK NAME: E-learning Platform UI Design
+<h2>E-learning Platform UI Design</h2>
 
 **TOOLS USED**:
 
-1.React.js: Used for building the frontend of the chat application, enabling dynamic UI rendering and state management.
-2.Socket.IO: For real-time communication between clients and server, allowing users to send and receive messages instantly.
-3.Express.js: To set up the backend server and handle socket connections.
-4.CSS: For styling the chat interface, ensuring a clean, user-friendly design that enhances the overall chat experience.
+1.React.js: Used for building the frontend of the chat application, enabling dynamic UI rendering and state management. <br>
+2.Socket.IO: For real-time communication between clients and server, allowing users to send and receive messages instantly. <br>
+3.Express.js: To set up the backend server and handle socket connections. <br>
+4.CSS: For styling the chat interface, ensuring a clean, user-friendly design that enhances the overall chat experience. <br>
 
 **DESCRIPTION**:
 
